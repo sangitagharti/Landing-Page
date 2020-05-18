@@ -1,0 +1,306 @@
+html,body {
+    width:100vw;
+    height: 100vh;
+    margin: 0;
+    scroll-behavior: smooth;
+    
+}
+
+
+
+/*===========HEADER START============*/
+
+header {
+  max-width: 100%;
+  position: relative;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+header .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background:url("https://mdbootstrap.com/img/Photos/Others/background.jpg");
+      opacity: 0.8;
+      z-index: 1;
+}
+
+
+/*This lets the text written  to come above the video*/
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header video {
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: 0;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+}
+
+
+/*======NAVBAR=========*/
+
+.navbar{
+    font-weight: 500;
+    z-index: 110;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    height: auto;
+}
+
+
+
+.navbar .navbar-brand
+{
+    color:antiquewhite;
+}
+
+.navbar .navbar-brand:hover {
+    color:black;
+    transition: all 1s;
+}
+
+
+.navbar .container .navbar-nav > li > a{
+    color:antiquewhite;
+}
+
+
+.navbar .container .navbar-nav > li > a:hover {
+    color:black;
+    transition: all 1s;
+}
+
+
+/*======SOCIAL ICONS TO APPEAR IN ROW EVEN AFTER COLLAPSING====*/
+.navbar .nav-flex-icons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; 
+}
+
+/*====Spacing between the social icons=====*/
+.navbar .nav-flex-icons li a
+{
+    padding-right: 15px;
+}
+
+
+
+/*NAVBAR BACKGROUND COLOR FOR LESS THAN 991PX WIDTH SCREEN*/
+@media (max-width: 991px) {
+    .navbar {
+        background-color: #563e91 !important;
+    }    
+}
+
+
+
+.hr-light {
+    border-top: 1px solid #fff;
+}
+
+header .btn-outline-white
+{
+    border: 1px solid;
+    border-radius: 50px;
+    color: #fff !important;
+}
+
+.btn-outline-white:hover, .btn-outline-white:focus, .btn-outline-white:active, .btn-outline-white:active:focus, .btn-outline-white.active {
+    border: 1px solid;
+    text-transform: uppercase;
+    color: #fff !important;
+    transition: all 1s;
+}
+
+header{
+    margin-bottom: 20px;
+}
+
+
+/*========HEADER END===========*/
+
+
+/*For general in section */
+section{
+    overflow-x: hidden;
+    max-width: 100%;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-title{
+    padding: 20px 0;
+}
+section p{
+    color: dimgrey;
+}
+
+img{ 
+    padding: 20px 0;
+    width:100%;
+}
+
+
+h3, h4{
+    padding:10px 0;
+}
+
+
+
+.section2, .section4-testimonials, .section7-contactus{
+    background-color:#eee; 
+   
+}
+
+
+
+.section2 .btn , .section6 .btn, .section7-contactus .btn{
+    background-color:purple;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff !important;
+    padding: 5px 30px;  
+}
+
+
+.section3 img{ 
+    padding: 12px 0;
+    cursor: -moz-zoom-in; 
+    cursor: -webkit-zoom-in; 
+    cursor: zoom-in;
+    
+}
+
+
+.section4-testimonials img{
+    max-width: 170px;
+}
+
+
+.section5{
+    position: relative;
+    background:url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img(115).jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    min-height: 50%;
+    display: flex;
+    justify-content: center;  
+}
+
+.section5 .btn-outline-white
+{
+    border: 1px solid;
+    border-radius: 12px;
+    color: #fff !important;
+}
+
+
+.section5-overlay{
+background-color: rgba(31,31,31,0.50);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
+.section5-content{
+    z-index: 2;
+}
+
+.contact-us{
+    text-align: left; 
+}
+
+footer .social-icons{
+    
+    text-align: center;
+    background-color:slateblue;
+    height: 200px;
+}
+
+footer .copy-right{
+    background-color: darkslateblue;
+    height: 60px;
+}
+
+
+.footer-copyright{
+    padding-top: 20px;
+}
+
+
+.footer-socialicons{
+    padding-top: 50px;
+}
+
+
+footer .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+
+
+footer .fa:hover {
+    opacity: 0.7;
+}
+
+footer .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+footer .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+footer .fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+footer .fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+footer .fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+footer .fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+
